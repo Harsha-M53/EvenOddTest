@@ -36,4 +36,11 @@ class EvenOddCTest {
     void testNegativeOdd() {
         assertFalse(EvenOdd.isEven(-3));
     }
+    
+    @Test
+    void testInvalidInput() {
+        assertThrows(NumberFormatException.class, () -> {
+            Integer.parseInt("abc");
+        });
+    }
 }
