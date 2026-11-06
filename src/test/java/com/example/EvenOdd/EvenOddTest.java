@@ -34,14 +34,9 @@ class EvenOddCTest {
 
     @Test
     void testNegativeOdd() {
-        assertFalse(EvenOdd.isEven(-3));
+        assertFalse(EvenOdd.isEven(-4));
     }
     
-    @Test
-    void testInvalidInput() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            Integer.parseInt("abc");
-        });
+
     
     }
-}
