@@ -34,7 +34,7 @@ class EvenOddCTest {
 
     @Test
     void testNegativeOdd() {
-        assertFalse(EvenOdd.isEven(-4));
+        assertFalse(EvenOdd.isEven(-3));
     }
     
 
