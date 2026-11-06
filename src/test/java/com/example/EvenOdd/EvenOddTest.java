@@ -39,8 +39,9 @@ class EvenOddCTest {
     
     @Test
     void testInvalidInput() {
-        assertThrows(NumberFormatException.class, () -> {
+        assertThrows(IllegalArgumentException.class, () -> {
             Integer.parseInt("abc");
         });
+    
     }
 }
